@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow: hidden;
+    color: white;
+    
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/Jellyfish.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 200px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 40px;
+
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    transition: 0.6s ease;
+
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid purple;
+
+}
+
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+h1{
+    color: white;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full{
+    background-color: transparent;
+    color: purple;
+    margin-right: 15px;
+    border: 1px solid purple;
+    transition: 0.7s ease;
+}
+.btn-full:hover{
+    background-color: white;
+
+}    
+
+
+.btn-nav{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.7s ease;
+
+}
+.btn-nav:hover{
+    background-color: purple;
+}
+.color-change{
+    animation: colorchangecoding 1s infinite;
+}
+@keyframes colorchangecoding{
+    0%{ color: red;}
+    25%{color: purple;}
+    50%{color: white;}
+    100%{ color: purple;}
+}
+
+.mobile-icon{
+    display: none;
+}
+
+/*.........................*/
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 2%;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{
+        font-size: 200%;
+
+    }
+
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 180%;
+
+    }
+
+    .main-nav{
+        display: none;
+    }
+    .mobile-icon{
+        display: inline-block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
